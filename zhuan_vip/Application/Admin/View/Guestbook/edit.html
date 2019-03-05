@@ -1,0 +1,57 @@
+<include file="Public/commoner"/>
+<block name="body">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li>留言管理</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a class="on" href="{:U('Guestbook/index')}">留言管理</a></li>
+			</ul>
+		</div>
+		<form action="{:U('Guestbook/update')}" method="post"  id="form" enctype="multipart/form-data" >
+			<input type="hidden" name="id" value="{$detail.id}" />
+			<input type="hidden" name="email" value="{$detail.email}">
+			<input type="hidden" name="title" value="{$detail.title}">
+			<div class="SiteContent">
+				<ul>
+					<li class="Name">姓名</li>
+					<li class="input">{$detail.name}</li>
+				</ul>
+				<ul>
+					<li class="Name">QQ</li>
+					<li class="input">{$detail.qq}</li>
+				</ul>
+				<ul>
+					<li class="Name">手机</li>
+					<li class="input">{$detail.telephone}</li>
+				</ul>
+				<ul>
+					<li class="Name">邮箱</li>
+					<li class="input">{$detail.email}</li>
+				</ul>
+				<ul>
+					<li class="Name">标题</li>
+					<li class="input">{$detail.title}</li>
+				</ul>
+				<ul>
+					<li class="Name">内容</li>
+					<li class="input">{$detail.content}</li>
+				</ul>
+				<ul>
+					<li class="Name">回复内容</li>
+					<li class="input">
+					   <textarea name="replycontent" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5">{$detail.replycontent}</textarea>
+					</li>
+				</ul>
+				<div class="cl" style="height: 10px;"></div>
+				<div class="btn">
+					<input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+					<input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+				</div>
+			</div>
+		</form>
+		<include file="Public:copyright"/>
+	</div>
+</block>

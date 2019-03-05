@@ -1,0 +1,76 @@
+<include file="Public/common"/>
+<block name="body">
+<if condition="$config['pattern'] eq 1">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <include file="Public/menu" />
+            <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <include file="Public/nav" />
+            </div>
+            <div class="row J_mainContent" id="content-main">
+                <iframe class="J_iframe" name="iframe0" scrolling="yes" width="100%" height="100%" src="{:U('index/summarize')}" frameborder="0"></iframe>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+    </div>
+    <!-- 全局js -->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <script src="__JS__/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="__JS__/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="__JS__/plugins/layer/layer.min.js"></script>
+    <!-- 自定义js -->
+    <script src="__JS__/hplus.min.js"></script>
+    <script type="text/javascript" src="__JS__/contabs.min.js"></script>
+    <!-- 第三方插件 -->
+    <script src="__JS__/plugins/pace/pace.min.js"></script>
+<else/>
+    <div id="wrapper">
+        <!-- Top Bar Start -->
+        <include file="Public:nav"/>
+        <!-- Top Bar End -->
+        <!-- Left Sidebar Start -->
+        <include file="Public:menu"/>
+        <!-- Left Sidebar End -->
+        <!-- Start right content -->
+        <div class="content-page">
+            <iframe scrolling="yes" frameborder="0" src="{:U('index/summarize')}" name="main"></iframe>
+        </div>
+        <!-- End right content -->
+    </div>
+    <!-- End of page -->
+    <!-- the overlay modal element -->
+    <div class="md-overlay"></div>
+    <!-- End of eoverlay modal -->
+<script>
+    var resizefunc = [];
+</script>
+<script src="__PUBLIC__/assets/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/assets/libs/jquery-detectmobile/detect.js"></script>
+<script src="__PUBLIC__/assets/libs/jquery-icheck/icheck.min.js"></script>
+<script src="__PUBLIC__/assets/libs/jquery-notifyjs/notify.min.js"></script>
+<script src="__PUBLIC__/assets/libs/jquery-notifyjs/styles/metro/notify-metro.js"></script>
+<script src="__PUBLIC__/assets/libs/jqueryui/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="__PUBLIC__/assets/libs/jquery-ui-touch/jquery.ui.touch-punch.min.js"></script>
+<script src="__PUBLIC__/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="__PUBLIC__/assets/libs/bootstrap-bootbox/bootbox.min.js"></script> -->
+<script src="__PUBLIC__/assets/libs/bootstrap-fileinput/bootstrap.file-input.js"></script>
+<!-- <script src="__PUBLIC__/assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+<script src="__PUBLIC__/assets/libs/fastclick/fastclick.js"></script>
+<script src="__PUBLIC__/assets/libs/pace/pace.min.js"></script>
+<script src="__PUBLIC__/assets/js/pages/notifications.js"></script>
+<script src="__PUBLIC__/assets/js/init.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn-logout").click(function() {
+			if(confirm('确定退出？')) {
+				window.location.href = "{:U('Public/logout')}";
+			}
+		});
+	});
+</script>
+</if>
+</block>

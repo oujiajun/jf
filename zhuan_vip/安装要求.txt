@@ -1,0 +1,6 @@
+1.����php_3203.sql
+2.�޸� Application\Common\Conf\config.php
+
+��̨������+/admin.php
+
+�˺� admin  ���� 123456

@@ -1,0 +1,57 @@
+<include file="Public/commoner"/>
+<block name="body">  
+	<ol class="breadcrumb">
+		<li><a class="J_menuItem" href="{:U('Index/summarize')}">首页</a></li>
+		<li>数据备份</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a href="{:U('Dbak/export')}">备份数据库</a></li>
+				<li><a onClick="myform.action='{:U('Dbak/optimize')}';myform.submit();" href="javascript:void(0)">优化表</a></li>
+				<li><a onClick="myform.action='{:U('Dbak/repair')}';myform.submit();" href="javascript:void(0)">修复表</a></li>
+			</ul>
+		</div>
+		<form name="myform" id="export-form" method="post" action="{:U('export')}">
+			<div class="List">
+				<div class="table-list">
+					<ul>
+						<li class="ID"><input id="check_box" onClick="selectall('tables[]');" checked="checked" type="checkbox" value=""></li>
+						<li class="Name">表名</li>
+						<li class="Property">数据量</li>
+						<li class="S_Order">字符集</li>
+						<li class="Status">数据大小</li>
+						<li class="Oper">更新时间</li>
+					</ul>
+				</div>
+				<volist name="list" id="vo">
+					<div class="ProList">
+						<ul>
+							<li class="ID"><input  checked="chedked" type="checkbox" name="tables[]" value="{$vo.name}"></li>
+							<li class="Name">{$vo.name}</li>
+							<li class="Property">{$vo.rows}</li>
+							 <li class="S_Order">{$vo.collation}</li>
+							<li class="Status">{$vo.data_length|format_bytes}</li>
+							<li class="Oper">{$vo.update_time}</li>
+						</ul>
+					</div>
+				 </volist>
+			</div>
+		</form>
+		<script type="text/javascript">
+			function selectall(name) {
+				if($("#check_box").prop('checked')== true) {
+					$("input[name='"+name+"']").each(function() {
+						$(this).prop('checked',true);
+						
+					});
+				} else {
+					$("input[name='"+name+"']").each(function() {
+						$(this).removeAttr("checked");
+					});
+				}
+			} 
+		</script>
+		<include file="Public:copyright"/>
+	</div>
+</block>

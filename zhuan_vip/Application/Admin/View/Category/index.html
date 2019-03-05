@@ -1,0 +1,60 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li>栏目管理</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on" href="{:U('Category/index')}">栏目管理</a></li>
+                <li><a href="{:U('Category/add')}">添加栏目</a></li>
+                <li><a href="{:U('Category/addBatch')}">批量添加</a></li>
+            </ul>
+        </div>
+        <form action="{:U('Category/listorder')}" method="post" >
+            <div class="List">
+                <div class="table-list">
+                    <ul>
+                        <li class="ID">ID</li>
+                        <li class="Name">栏目名称</li>
+                        <li class="S_Order">排序</li>
+                        <li class="Property">栏目属性</li>
+                        <li class="Status">状态</li>
+                        <li class="Oper">管理操作</li>
+                    </ul>
+                </div>
+                <foreach name="list" item="vo" key="k" >
+                    <div class="ProList">
+                        <ul>
+                            <li class="ID">{$vo.catid}</li>
+                            <li class="Name">
+                                {:str_repeat("└─ ",$vo['level'])}
+                                <if condition="$vo['ispart'] eq 0">
+                                    <a href="{:U('Category/edit',array('catid'=>$vo['catid']))}">{$vo.catname}</a>
+                                <else />
+                                    {$vo.catname}
+                                </if>
+                            </li>
+                            <li class="S_Order">
+                                <input type="text" class="sInput" name="sort[{$vo.catid}]" value="{$vo.sort}" />
+                            </li>
+                            <li class="Property">{$vo['ispart']==0?'列表':'频道'}</li>
+                            <li class="Status">{$vo['ishidden']==0?'显示':'隐藏'}</li>
+                            <li class="Oper">
+                            	<div>
+                                    <a href="{:U('Category/edit',array('catid'=>$vo['catid']))}">编辑</a>
+                                    <span>|</span>
+                                    <a  href="{:U('Category/delete',array('catid'=>$vo['catid']))}">删除</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </foreach>
+                <div class="cl" style="margin-top: 15px;"></div>
+                <div class="Order_submit"><input class="btn btn-primary btn6 mr10" type="submit" value="排序" /></div>
+            </div>
+        </form>           
+        <include file="Public:copyright"/>
+    </div>
+</block>

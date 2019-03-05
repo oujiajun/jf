@@ -1,0 +1,1 @@
+a:5:{s:9:"MAIL_HOST";s:13:"smtp.yeah.net";s:13:"MAIL_USERNAME";s:18:"comsystem@yeah.net";s:9:"MAIL_FROM";s:18:"comsystem@yeah.net";s:13:"MAIL_FROMNAME";s:18:"comsystem@yeah.net";s:13:"MAIL_PASSWORD";s:8:"ok990909";}

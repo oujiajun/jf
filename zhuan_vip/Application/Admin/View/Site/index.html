@@ -1,0 +1,177 @@
+<?php $sel = 2; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>基本设置</li>
+		</ol>
+        <div class="content">
+        	<div class="Config_nav">
+                <ul>
+                    <li><a class="on" href="{:U('Site/index')}">网站基本设置</a></li>
+                </ul>
+            </div>
+            <form action="{:U('Site/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <div class="SiteContent">
+                    <ul>
+                        <li class="Name">公司名称</li>
+                        <li class="input">
+                        	<input type="text" value="{$info.companyname}" size="40" name="companyname" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">公司电话</li>
+                        <li class="input"><input type="text" value="{$info.site_phone}" size="40" name="site_phone" class="common-text input-text"></li>
+                    </ul>
+                    <ul>
+                        <li class="Name">网站Logo</li>
+                        <li class="input">
+                        	<input id="upload_file" type="file">
+                            <div class="cl" style="margin-top: 5px;"></div>
+                             <if condition="$info[site_logo]">
+                             <div class="Pic"><span><a href="{$info.site_logo}" target="_blank"><img src="{$info.site_logo}" /></a></span></div>
+                            </if>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">网站网址</li>
+                        <li class="input">
+                        	<input type="text" value="{$info.url}" size="40" name="url" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">SEO标题</li>
+                        <li class="input">
+                            <input type="text" value="{$info.ptitle}" size="40" name="ptitle" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">SEO关键字</li>
+                        <li class="input">
+                            <input type="text" value="{$info.pkeywords}" size="40" name="pkeywords" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">SEO描述</li>
+                        <li class="input">
+                            <input type="text" value="{$info.pdescription}" size="60" name="pdescription" class="common-text input-text">
+                        </li>
+                    </ul>
+					<ul>
+						<li class="Name">网站模板</li>
+						<li class="input">
+							<select name="template_pc">
+								<foreach name="pc" item="vo" key="k" >
+									<option value="{$vo.dirname}" <if condition="$vo['dirname'] eq $detail['template']">selected="selected"</if>>{$vo.name} ( {$vo.dirname} )</option>
+								</foreach>
+							</select>
+						</li>
+					</ul>
+					<ul>
+						<li class="Name">WAP网站模板</li>
+						<li class="input">
+							<select name="template_wap">
+								<foreach name="wap" item="vo" key="k" >
+									<option value="{$vo.dirname}" <if condition="$vo['dirname'] eq $detail['template']">selected="selected"</if>>{$vo.name} ( {$vo.dirname} )</option>
+								</foreach>
+							</select>
+						</li>
+					</ul>
+                    <ul>
+                        <li class="Name">公司地址</li>
+                        <li class="input">
+                            <input type="text" value="{$info.site_address}" size="60" name="site_address" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">Email</li>
+                        <li class="input">
+                            <input type="text" value="{$info.site_email}" size="60" name="site_email" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">备案号</li>
+                        <li class="input">
+                            <input type="text" value="{$info.site_filing}" size="60" name="site_filing" class="common-text input-text">
+                        </li>
+                    </ul>
+                    <ul>
+                    	<li class="Name">上传大小</li>
+                        <li class="input">
+                            <input type="text" value="{$info.file_size}" size="60" name="file_size" class="common-text input-text"><span>单位：MB, 0为不限制大小</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">Js代码调用</li>
+                        <li class="input"><textarea name="site_jstransfer" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5">{$info.site_jstransfer}</textarea></li>
+                    </ul>
+                    <ul>
+                        <li class="Name">底部版权</li>
+                        <li class="input"><textarea name="site_copyright" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5">{$info.site_copyright}</textarea></li>
+                    </ul>
+                    <ul>
+						<li class="Name">后台风格</li>
+						<li class="input">
+							<select name="pattern">
+								<option value="1" <if condition="$info['pattern'] eq 1">selected="selected"</if>>界面一</option>
+                                <option value="2" <if condition="$info['pattern'] eq 2">selected="selected"</if>>界面二</option>
+							</select>
+						</li>
+					</ul>
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+                        <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                    </div>
+				</div>
+            </form>           
+            <include file="Public:copyright"/>
+        </div>
+</block>
+<script type="text/javascript">
+$(function(){
+	$('#upload_file').uploadify({
+		'queueSizeLimit'  : 1,
+		'swf'             : '__PUBLIC__/User/uploadify.swf',
+		'uploader'        : "{:U('Public/uploadAttach',array('session_id'=>session_id(),'type'=>'1'))}",
+		'fileObjName'     : $('#upload_file').attr('name'),
+		'buttonClass'     : 'upload-case',
+		'width'           : 150,
+		'height'          : 25,
+		'removeTimeout'   : 1,
+		'buttonText'      : '上传图片',
+		'fileTypeExts'    : '*.gif; *.jpg; *.png;',
+		'onUploadSuccess' : function(file, data, response) {
+			//var data = $.parseJSON(data);
+			var data = eval("("+data+")");
+			if(data.status ==0){
+				alert('上传出错，请稍后再试');
+				return false;
+			}
+			if(data.status==1){           	
+				var html = '<div class="cl" style="margin-top: 5px;"></div>'
+				html += '<div id="attachment">'+'<span><img src="'+data.file+'"></span>' ;
+				html += '<a href="javascript:void(0)" onclick="delete_attachment(this);">删除</a>';
+				html += '<input type="hidden" name="site_logo" value="'+data.file+'" /></div>';
+				$('#upload_file').after(html);
+			} else {
+				alert('上传出错，请稍后再试');
+				return false;
+			}
+		},
+		'onSelect' : function(file) {
+			var length = $('#attachment').length;
+			if(length > 0){
+				$('#upload_file').uploadify('cancel')
+				$('#upload_file').uploadify('stop');
+				alert('附件只允许上传一个');
+				return false;
+			}
+		}
+	});
+	 });
+	function delete_attachment(e){
+		var $this = $(e);
+		$this.parent('div').remove();
+	}
+</script>

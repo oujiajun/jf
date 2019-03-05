@@ -1,0 +1,295 @@
+[ 2018-03-26T09:40:40+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-03-26T09:40:40+08:00 ] 127.0.0.1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-03-26T09:40:41+08:00 ] 127.0.0.1 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-03-26T09:40:49+08:00 ] 127.0.0.1 /admin.php/Login/verify.html?0.39283555787154945
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-03-26T09:40:50+08:00 ] 127.0.0.1 /admin.php/Login/verify.html?0.08504178336044776
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-03-26T09:41:02+08:00 ] 127.0.0.1 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0731s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0101s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522028461',`lastip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0048s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0141s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','2130706433','Admin','1522028461','admin在2018-03-26 09:41登录了后台') [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.201338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-03-26T09:41:05+08:00 ] 127.0.0.1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.1579s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-03-26T09:41:06+08:00 ] 127.0.0.1 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: select version() as ver [ RunTime:0.1297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-03-26T09:41:07+08:00 ] 127.0.0.1 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 非法操作:skin-config
+
+[ 2018-03-26T09:41:09+08:00 ] 127.0.0.1 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: map D:\admins\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: map D:\admins\Application\Admin\Controller\VipController.class.php 第 17 行.
+SQL: SELECT * FROM `xg_user` ORDER BY userid ASC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\admins\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-03-26T09:41:11+08:00 ] 127.0.0.1 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-03-26T09:42:41+08:00 ] 127.0.0.1 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-03-26T09:43:42+08:00 ] 127.0.0.1 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2018-03-26T09:46:10+08:00 ] 127.0.0.1 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+

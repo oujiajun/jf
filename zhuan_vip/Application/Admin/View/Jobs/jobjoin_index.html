@@ -1,0 +1,52 @@
+<include file="Public/commoner"/>
+<block name="body">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li><a href="{:U('Jobs/index')}">招聘管理</a></li>
+		<li>应聘简历</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a href="{:U('Jobs/index')}">招聘管理</a></li>
+				<li><a href="{:U('Jobs/add')}">添加招聘</a></li>
+				<li><a class="on" href="{:U('Jobs/jobjoin_index')}">应聘简历</a></li>
+			</ul>
+		</div>
+			<div class="List">
+				<div class="table-list">
+					<ul>
+						<li class="ID">ID</li>
+						<li class="Name">应聘职位</li>
+						<li class="Property">应聘者姓名</li>
+						<li class="S_Order">提交时间</li>
+						<li class="Status">状态</li>
+						<li class="Oper">管理操作</li>
+					</ul>
+				</div>
+				<foreach name="jobs_list" item="vo" key="k" >
+					<div class="ProList">
+						<ul>
+							<li class="ID">{$vo.id}</li>
+							<li class="Name">{$vo.title}</li>
+							<li class="Property"><a href="{:U('Articlecomment/Comment',array('id'=>$vo['id']))}">{$vo.name}</a></li>
+							 <li class="S_Order">{$vo.addtime|date="Y-m-d",###}</li>
+							<li class="Status">{$vo[status]==1?'已查看':'<font color=red>未查看</font>'}</li>
+							<li class="Oper">
+                                <div>
+                                    <a href="{:U('Jobs/Comment',array('id'=>$vo['id']))}">查看</a>
+                                    <span>|</span>
+                                    <a href="{:U('Jobs/jobjoin_delete',array('id'=>$vo['id']))}">删除</a>
+                                </div>
+							</li>
+						</ul>
+					</div>
+				</foreach>
+				<div class="cl" style="margin-top: 15px;"></div>
+				<div class="Order_submit">
+					<div class="tp_pages">{$page}</div>
+				</div>
+			</div>
+		<include file="Public:copyright"/>
+	</div>
+</black>

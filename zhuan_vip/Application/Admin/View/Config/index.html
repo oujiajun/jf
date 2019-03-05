@@ -1,0 +1,30 @@
+<include file="Public/commoner"/>
+<block name="body">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li>SMTP服务器配置</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a class="on" href="{:U('Config/index')}">SMTP服务器配置</a></li>
+			</ul>
+		</div>
+		<form action="{:U('Config/save')}" method="post"  id="form" enctype="multipart/form-data" >
+			<div class="SiteContent">
+			<foreach name="list" item="config" key="k" >
+				<ul>
+					<li class="Name">{$config.title}</li>
+					<li class="input"><input class="common-text input-text" name="config[{$config.name}]" value="{$config.value}" size="40" type="text"></li>
+				</ul>
+			</foreach>
+				<div class="cl" style="height: 10px;"></div>
+				<div class="btn">
+					<input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+					<input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+				</div>
+			</div>
+		</form>           
+		<include file="Public:copyright"/>
+	</div>
+</block>

@@ -1,0 +1,45 @@
+<?php $sel = 15; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>用户信息</li>
+		</ol>
+        <div class="content">
+			<div class="Config_nav">
+                <ul>
+                    <li><a>ip信息</a></li>
+                </ul>
+            </div>
+            <form action="{:U('Ip/doadd')}" method="post"  id="form" enctype="multipart/form-data" >
+           		<div class="SiteContent">
+                    <ul>
+                        <li class="Name">ip地址</li>
+                        <li class="input">
+                            <input class="common-text input-text" width="300" name="ip" size="40" type="text" placeholder="请输入ip地址">
+                        </li>
+                    </ul>
+
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+                        <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                    </div>
+				</div>
+            </form>
+            <include file="Public:copyright"/>
+        </div>
+</block>
+
+<script type="text/javascript" src="__JS__/selectTag/selectTag.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii:ss',
+        language: "zh-CN",
+        minView: 2,
+        autoclose: true
+    });
+    showTab();
+});
+</script>

@@ -1,0 +1,45 @@
+<include file="Public/commoner"/>
+<block name="body">  
+	<ol class="breadcrumb">
+		<li><a class="J_menuItem" href="{:U('Index/summarize')}">首页</a></li>
+		<li>数据还原</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a href="{:U('Dbak/export')}">备份数据库</a></li>
+			</ul>
+		</div>
+		<div class="List">
+			<div class="table-list">
+				<ul>
+					<li class="ID">序号</li>
+					<li class="Name">数据库名称</li>
+					<li class="Property">备份时间</li>
+					<li class="S_Order">修改时间</li>
+					<li class="Status">文件大小</li>
+					<li class="Oper">操作</li>
+				</ul>
+			</div>
+			<foreach name="list" item="vo" key="k">
+				<div class="ProList">
+					<ul>
+						<li class="ID">{$k+1}</li>
+						<li class="Name">{$vo.name}</li>
+						<li class="Property">{$vo.ctime|date = "Y-m-d",###}</li>
+						 <li class="S_Order">{$vo.mtime|date = "Y-m-d",###}</li>
+						<li class="Status">{$vo.size} KB</li>
+						<li class="Oper">
+							<div>
+                                <a href="{:U('Dbak/doReduction',array('time'=>$vo['ctime']))}" >还原</a>
+                                <span>|</span>
+                                <a href="{:U('Dbak/delbak',array('time'=>$vo['ctime']))}" >删除</a>
+                            </div>
+						</li>
+					</ul>
+				</div>
+			 </foreach>
+		</div>
+		<include file="Public:copyright"/>
+	</div>
+</block>

@@ -1,0 +1,2286 @@
+[ 2018-04-01T11:52:14+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T11:52:14+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T11:52:14+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:47:52+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:47:53+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:47:59+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522568879',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0156s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522568879','admin在2018-04-01 15:47登录了后台') [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+
+[ 2018-04-01T15:48:09+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:48:14+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:48:17+08:00 ] 134.159.205.110 /admin.php/Login/verify.html?0.6969338150229305
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:48:22+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522568902',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522568902','admin在2018-04-01 15:48登录了后台') [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+
+[ 2018-04-01T15:50:36+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:50:42+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:50:49+08:00 ] 134.159.205.110 /admin.php/Login/verify.html?0.5158552208449692
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:50:53+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569052',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522569052','admin在2018-04-01 15:50登录了后台') [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+ERR: 1054:Unknown column 'sessid' in 'field list'
+ [ SQL语句 ] : update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin'
+
+[ 2018-04-01T15:50:58+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:51:00+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html?_360safeparam=273760788
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:51:12+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:51:14+08:00 ] 182.148.32.180 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='182.148.32.180'
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='182.148.32.180'
+
+[ 2018-04-01T15:51:16+08:00 ] 182.148.32.180 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='182.148.32.180'
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='182.148.32.180'
+
+[ 2018-04-01T15:52:14+08:00 ] 61.129.6.147 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='61.129.6.147'
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='61.129.6.147'
+
+[ 2018-04-01T15:52:16+08:00 ] 61.129.6.147 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='61.129.6.147'
+ERR: 1146:Table 'zhuan_vip.xg_ip' doesn't exist
+ [ SQL语句 ] : select 1 from xg_ip where ip='61.129.6.147'
+
+[ 2018-04-01T15:52:34+08:00 ] 182.148.32.180 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='182.148.32.180' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:52:36+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:52:36+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:52:39+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:52:39+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:53:36+08:00 ] 61.129.8.199 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:53:39+08:00 ] 61.129.6.151 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:53:40+08:00 ] 61.129.6.151 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:08+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:09+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:09+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html?_360safeparam=273760788
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:11+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:55:18+08:00 ] 182.148.32.180 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569318',`lastip`='-1231806284' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-1231806284','Admin','1522569318','admin在2018-04-01 15:55登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='mebausoujopgdu0rgu9iqf00g3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:19+08:00 ] 182.148.32.180 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='182.148.32.180' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:21+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:55:21+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:29+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:30+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:55:35+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569335',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522569335','admin在2018-04-01 15:55登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 182.148.32.180 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569337',`lastip`='-1231806284' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-1231806284','Admin','1522569337','admin在2018-04-01 15:55登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='mebausoujopgdu0rgu9iqf00g3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+
+[ 2018-04-01T15:55:37+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:38+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:38+08:00 ] 182.148.32.180 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='182.148.32.180' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:40+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:40+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:40+08:00 ] 134.159.205.110 /admin.php/Index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+
+[ 2018-04-01T15:55:40+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:40+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:46+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569346',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522569346','admin在2018-04-01 15:55登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:47+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T15:55:48+08:00 ] 134.159.205.110 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:48+08:00 ] 134.159.205.110 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:skin-config
+
+[ 2018-04-01T15:55:52+08:00 ] 134.159.205.110 /admin.php/Ip/ip.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_ip` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\IpController.class.php 第 16 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_ip` LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\IpController.class.php 第 18 行.
+SQL: SELECT * FROM `xg_ip` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:58+08:00 ] 134.159.205.110 /admin.php/Ip/ip.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_ip` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\IpController.class.php 第 16 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_ip` LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\IpController.class.php 第 18 行.
+SQL: SELECT * FROM `xg_ip` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0d236707c3dc1a243f4fe3186e41abdb.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:55:59+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+
+[ 2018-04-01T15:56:19+08:00 ] 61.151.178.170 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='61.151.178.170' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:19+08:00 ] 134.159.205.110 /admin.php/Index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:21+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+
+[ 2018-04-01T15:56:22+08:00 ] 61.151.178.166 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='61.151.178.166' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:22+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:23+08:00 ] 61.151.178.166 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:24+08:00 ] 61.151.178.166 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:25+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+ERR: 1146:Table 'zhuan_vip.xg_v_aft' doesn't exist
+ [ SQL语句 ] : SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10
+
+[ 2018-04-01T15:56:26+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:29+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:31+08:00 ] 134.159.205.110 /admin.php/Vip/account_exports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account`  [ RunTime:0.0000s ]
+
+[ 2018-04-01T15:56:41+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T15:56:43+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:01+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:04+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:04+08:00 ] 182.148.32.180 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569784',`lastip`='-1231806284' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-1231806284','Admin','1522569784','admin在2018-04-01 16:03登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='mebausoujopgdu0rgu9iqf00g3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:04+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+
+[ 2018-04-01T16:03:05+08:00 ] 182.148.32.180 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='182.148.32.180' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:07+08:00 ] 182.148.32.180 /admin.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:07+08:00 ] 182.148.32.180 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:07+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:07+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:15+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522569795',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522569795','admin在2018-04-01 16:03登录了后台') [ RunTime:0.0156s ]
+SQL: update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:16+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:17+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:17+08:00 ] 134.159.205.110 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:skin-config
+
+[ 2018-04-01T16:03:18+08:00 ] 134.159.205.110 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T16:03:28+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:31+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:03:35+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:06:33+08:00 ] 134.159.205.110 /admin.php/Index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T16:06:34+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:05:28+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:05:29+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:05:39+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:05:49+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:05:57+08:00 ] 134.159.205.110 /admin.php/Login/verify.html?0.04248300287872553
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:00+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522573560',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522573560','admin在2018-04-01 17:06登录了后台') [ RunTime:0.0000s ]
+SQL: update xg_admin set sessid='c0jjleimcqcahfv4tm4d8no7h3' where username='admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:01+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-04-01T17:06:02+08:00 ] 134.159.205.110 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:02+08:00 ] 134.159.205.110 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:skin-config
+
+[ 2018-04-01T17:06:04+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:05+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:07+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY lev DESC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:10+08:00 ] 134.159.205.110 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-01T17:06:13+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select 1 from xg_ip where ip='134.159.205.110' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE ( username='admin' and sessid='c0jjleimcqcahfv4tm4d8no7h3' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 199 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

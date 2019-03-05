@@ -1,0 +1,51 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li>用户信息</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on" href="{:U('Ip/index')}">ip信息</a></li>
+                <li><a href="{:U('Ip/add')}">添加ip</a></li>
+            </ul>
+        </div>
+        <div class="Search">
+            <form action="" method="get">
+                <div class="keyword">
+                    <input class="common-text input-text" size="25" placeholder="用户名" name="q" value=""  type="text">
+                    
+                </div>
+                <div class="btn1">
+                    <input class="btn btn-primary btn6 mr10" value="查询" type="submit" />
+               </div>
+            </form>
+        </div>
+        <div class="List">
+            <div class="table-list">
+                <ul>
+                    <li class="ID">ID</li>
+                    <li class="Name">IP</li>
+                    <li class="S_Order">管理操作</li>
+                </ul>
+            </div>
+            <foreach name="ip_list" item="vo" key="k" >
+                <div class="ProList">
+                    <ul>
+                        <li class="ID">{$vo.id}</li>
+                        <li class="Name" style="text-align:center">{$vo.ip}</li>
+						<li class="S_Order">
+                          <a href="{:U('Ip/delete',array('id'=>$vo['id']))}">删除</a>
+                        </li>
+                    </ul>
+                </div>
+            </foreach> 
+           <div class="cl" style="margin-top: 15px;"></div>
+            <div class="Order_submit">
+                <div class="tp_pages">{$page}</div>
+            </div>
+        </div>
+        <include file="Public:copyright"/>
+    </div>
+</block>

@@ -1,0 +1,55 @@
+<include file="Public/commoner"/>
+<block name="body">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li>友情链接</li>
+	</ol>
+	<div class="content">
+		<div class="Config_nav">
+			<ul>
+				<li><a class="on" href="{:U('Flink/index')}">链接管理</a></li>
+				<li><a href="{:U('Flink/add')}">添加链接</a></li>
+			</ul>
+		</div>
+		<form action="{:U('Flink/listorder')}" method="post" >
+			<div class="List">
+				<div class="table-list">
+					<ul>
+						<li class="ID">ID</li>
+						<li class="Name">链接名称</li>
+						<li class="Property">链接类型</li>
+						<li class="S_Order">排序</li>
+						<li class="Status">状态</li>
+						<li class="Oper">管理操作</li>
+					</ul>
+				</div>
+				<foreach name="list" item="vo" key="k" >
+					<div class="ProList">
+						<ul>
+							<li class="ID">{$vo.linkid}</li>
+							<li class="Name"><a href="{:U('Flink/edit',array('linkid'=>$vo['linkid']))}">{$vo.name}</a></li>
+							<li class="Property">{$vo['cid']==0?'友情链接':'合作伙伴'}</li>
+							<li class="S_Order">
+								<input type="text" class="sInput" name="sort[{$vo.linkid}]" value="{$vo.sort}" />
+							</li>
+							<li class="Status">{$vo['ishidden']==0?'显示':'隐藏'}</li>
+							<li class="Oper">
+                            	<div>
+                                    <a href="{:U('Flink/edit',array('linkid'=>$vo['linkid']))}">编辑</a>
+                                    <span>|</span>
+                                    <a href="{:U('Flink/delete',array('linkid'=>$vo['linkid']))}">删除</a>
+                                </div>
+							</li>
+						</ul>
+					</div>
+				</foreach>
+			   
+				<div class="cl" style="margin-top: 15px;"></div>
+				<div class="Order_submit">
+					<input class="btn btn-primary btn6 mr10" type="submit" value="排序" /><div class="tp_pages">{$page}</div>
+				</div>
+			</div>
+		</form>           
+		<include file="Public:copyright"/>
+	</div>
+</black>

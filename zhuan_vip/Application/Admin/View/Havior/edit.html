@@ -1,0 +1,52 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li><a href="{:U('Havior/index')}">用户行为</a></li>
+        <li>编辑行为</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on" href="{:U('Havior/index')}">行为列表</a></li>
+                <li><a href="{:U('Havior/add')}">添加行为</a></li>
+            </ul>
+        </div>
+        <form action="{:U('Havior/update')}" method="post"  id="form" enctype="multipart/form-data" >
+            <input type="hidden" name="id" value="{$detail.id}" /> 
+            <div class="SiteContent">
+            	<ul>
+                    <li class="Name">行为标识</li>
+                    <li class="input"><input class="common-text input-text" name="name" value="{$detail.name}" size="40" type="text"></li>
+                </ul>
+                <ul>
+                    <li class="Name">行为名称</li>
+                    <li class="input"><input class="common-text input-text" name="title" value="{$detail.title}" size="40" type="text"></li>
+                </ul>
+                <ul>
+                    <li class="Name">行为类型</li>
+                    <li class="input">
+                        <select name="type">
+                            <option value="1" <if condition="$detail['type'] eq 1">selected="selected"</if>>系统</option>
+                            <option value="2" <if condition="$detail['type'] eq 2">selected="selected"</if>>用户</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="Name">行为规则</li>
+                    <li class="input"><textarea name="rule" class="common-textarea textarea"  cols="30" style="width: 35%;" rows="5">{$detail.rule}</textarea></li>
+                </ul>
+                <ul>
+                    <li class="Name">日志规则</li>
+                    <li class="input"><textarea name="log" class="common-textarea textarea"  cols="30" style="width: 35%;" rows="5">{$detail.log}</textarea></li>
+                </ul>
+                <div class="cl" style="height: 10px;"></div>
+                <div class="btn">
+                    <input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+                    <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                </div>
+            </div>
+        </form>           
+        <include file="Public:copyright"/>
+    </div>
+</black>

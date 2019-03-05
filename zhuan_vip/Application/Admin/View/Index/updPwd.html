@@ -1,0 +1,40 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li>修改资料</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on" href="{:U('index/updPwd')}">修改资料</a></li>
+            </ul>
+        </div>
+        <form action="{:U('index/updPasswd')}" id="myform" name="myform"  method='post'>
+            <div class="SiteContent">
+                <ul>
+                    <li class="Name">原密码</li>
+                    <li class="input"><input class="common-text input-text" name="password_o" id="password_o" size="40" type="password"></li>
+                </ul>
+                <ul>
+                    <li class="Name">新密码</li>
+                    <li class="input"><input class="common-text input-text" name="password_n" id="password_n" size="40" type="password"></li>
+                </ul>
+                <ul>
+                    <li class="Name">重复密码</li>
+                    <li class="input"><input class="common-text input-text" name="password_r" id="password_r" size="40" type="password"></li>
+                </ul>
+                <ul>
+                    <li class="Name">邮箱</li>
+                    <li class="input"><input class="common-text input-text" name="email" value="{$detail.email}" size="40" type="text"></li>
+                </ul>
+                <div class="cl" style="height: 10px;"></div>
+                <div class="btn">
+                    <input class="btn btn-primary btn6 mr10" value="修改" style="margin-right: 10px;" type="submit">
+                    <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                </div>	
+            </div>
+        </form>
+        <include file="Public:copyright"/>
+    </div>
+</block>

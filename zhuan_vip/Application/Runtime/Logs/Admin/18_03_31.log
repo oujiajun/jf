@@ -1,0 +1,745 @@
+[ 2018-03-31T20:20:43+08:00 ] 134.159.205.110 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:07+08:00 ] 134.159.205.110 /admin.php?_360safeparam=203544769
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:07+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:08+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:14+08:00 ] 134.159.205.110 /admin.php/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xg_admin` SET `lasttime`='1522498874',`lastip`='-2036347538' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_admin` [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `xg_admin` WHERE `adminid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_action_log` [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_action_log` (`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('1','-2036347538','Admin','1522498874','admin在2018-03-31 20:21登录了后台') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:16+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:16+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:17+08:00 ] 134.159.205.110 /admin.php/index/summarize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select version() as ver [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\a91718f612b01347f17fdaf34b340690.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:17+08:00 ] 134.159.205.110 /admin.php/Index/skin-config.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:skin-config
+
+[ 2018-03-31T20:21:19+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:23+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 102 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:53+08:00 ] 134.159.205.110 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:21:53+08:00 ] 134.159.205.110 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-03-31T20:21:53+08:00 ] 134.159.205.110 /admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:34+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:34+08:00 ] 134.159.205.110 /admin.php/Vip/account_lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_account` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_account` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: q D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 102 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 51 行.
+NOTIC: [8] Undefined variable: dates D:\web\zhuan_vip\Application\Runtime\Cache\Admin\0f88a0d629f1028e4fff572fe353ba94.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:36+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:37+08:00 ] 134.159.205.110 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:41+08:00 ] 134.159.205.110 /admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\UserController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\UserController.class.php 第 17 行.
+SQL: SELECT * FROM `xg_user` ORDER BY userid desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 24 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: groupid D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 68 行.
+NOTIC: [8] Undefined index: point D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Use of undefined constant islock - assumed 'islock' D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+NOTIC: [8] Undefined index: islock D:\web\zhuan_vip\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:42+08:00 ] 134.159.205.110 /admin.php/User/group_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:24:47+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:25:21+08:00 ] 134.159.205.110 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:25:41+08:00 ] 134.159.205.110 /admin.php/Vip/doadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_user` WHERE `username` = 'pkq666' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_user` (`username`,`money`,`betting`,`system_date`,`update_date`) VALUES ('pkq666','231564','8756454','1521721521','1522499141') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('pkq666','231564','8756454','1521721521','1522499141','16')
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('pkq666','231564','8756454','1521721521','1522499141','16')
+
+[ 2018-03-31T20:25:44+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:25:45+08:00 ] 134.159.205.110 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:26:07+08:00 ] 134.159.205.110 /admin.php/Vip/doadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_user` WHERE `username` = '皮卡丘' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_user` (`username`,`money`,`betting`,`system_date`,`update_date`) VALUES ('皮卡丘','546897','9846512','1522239945','1522499167') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('皮卡丘','546897','9846512','1522239945','1522499167','17')
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('皮卡丘','546897','9846512','1522239945','1522499167','17')
+
+[ 2018-03-31T20:26:16+08:00 ] 134.159.205.110 /admin.php/Vip/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\web\zhuan_vip\Application\Admin\Controller\VipController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xg_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT xg_user.userid,xg_user.money,xg_user.betting,lev,xg_v_aft.username FROM xg_user,xg_v_aft where xg_v_aft.username=xg_user.username ORDER BY userid ASC LIMIT 0,10 [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 16 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 21 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+NOTIC: [8] Undefined variable: sel D:\web\zhuan_vip\Application\Runtime\Cache\Admin\bce2a69d8784dbaf44d668d2b19b643c.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:29:42+08:00 ] 134.159.205.110 /admin.php/Vip/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-31T20:29:53+08:00 ] 134.159.205.110 /admin.php/Vip/doadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xg_site` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_site` WHERE `siteid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_auth` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_auth` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xg_user` WHERE `username` = 'pkq888' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `xg_user` (`username`,`money`,`betting`,`system_date`,`update_date`) VALUES ('pkq888','546487','2416546','1522499382','1522499393') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xg_account` [ RunTime:0.0156s ]
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('pkq888','546487','2416546','1522499382','1522499393','18')
+ERR: 1364:Field 'routes' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xg_account` (`username`,`money`,`betting`,`system_date`,`update_date`,`uid`) VALUES ('pkq888','546487','2416546','1522499382','1522499393','18')
+

@@ -1,0 +1,33 @@
+<if condition="$config['pattern'] eq 1">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary"><i class="fa fa-bars"></i></a></div>
+        <a href="{:U('Public/logout')}" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> {:L('Logout')}</a>
+    </nav>
+<else/>
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="logo">
+                <h1><a href="#"></a></h1>
+            </div>
+            <button class="button-menu-mobile open-left">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-collapse2">
+                    <ul class="nav navbar-nav navbar-right top-navbar">
+                        <li class="dropdown iconify hide-phone"><a href="javascript:;" onFocus="this.blur();" onclick="javascript:toggle_fullscreen()"><i class="icon-resize-full-2"></i></a></li>
+                        <li class="dropdown topbar-profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="rounded-image topbar-profile-image"><img src="__IMG__/profile_small.jpg"></span><strong>{$_SESSION.admin_auth.username}</strong> <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{:U('Index/updPwd')}"><i class="icon-key"></i>{:L('icon-key')}</a></li>
+                                <li><a id="btn-logout" href="{:U('Public/logout')}"><i class="icon-logout-1"></i>{:L('Logout')}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</if>

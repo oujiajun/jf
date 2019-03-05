@@ -1,0 +1,31 @@
+<?php $sel = 15; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>导入问价</li>
+		</ol>
+        <div class="content">
+			<div class="Config_nav">
+                <ul>
+                    <li><a>导入文件页面</a></li>
+                </ul>
+            </div>
+            <form action="{:U('Vip/do_bimports')}" method="post"  id="form" enctype="multipart/form-data" >
+           		<div class="SiteContent">
+                    <ul>
+                        <li class="Name" style="width:200px;">前选择你要导入的文件:</li>
+                        <li class="input">
+                          <input type="file" name="myfile">     
+                        </li>
+                    </ul>
+
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" type="submit" value="上传文件" />
+                    </div>
+				</div>
+            </form>
+            <include file="Public:copyright"/>
+        </div>
+</block>

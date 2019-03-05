@@ -1,0 +1,52 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li><a href="{:U('Product/index')}">产品管理</a></li>
+        <li>产品评论</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a href="{:U('Product/index')}">产品管理</a></li>
+                <li><a href="{:U('Product/add')}">添加产品</a></li>
+                <li><a class="on" href="{:U('Productcomment/index')}">产品评论</a></li>
+            </ul>
+        </div>
+        <div class="List">
+            <div class="table-list">
+                <ul>
+                    <li class="ID">ID</li>
+                    <li class="Name">评论标题</li>
+                    <li class="Property">评论时间</li>
+                    <li class="S_Order">评论指数</li>
+                    <li class="Status">状态</li>
+                    <li class="Oper">管理操作</li>
+                </ul>
+            </div>
+            <foreach name="article_list" item="vo" key="k" >
+                <div class="ProList">
+                    <ul>
+                        <li class="ID">{$vo.id}</li>
+                        <li class="Name"><a href="{:U('Productcomment/Comment',array('id'=>$vo['id']))}">{$vo.commenttitle}</a></li>
+                        <li class="Property">{$vo.inputtime|date="Y-m-d",###}</li>
+                        <li class="S_Order">{$vo.info}</li>
+                        <li class="Status">{$vo[status]==1?'已审核':'<font color=red>未审核</font>'}</li>
+                        <li class="Oper">
+                            <div>
+                                <a href="{:U('Productcomment/Comment',array('id'=>$vo['id']))}">查看</a>
+                                <span>|</span>
+                                <a href="{:U('Productcomment/delete',array('id'=>$vo['id']))}">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </foreach>
+            <div class="cl" style="margin-top: 15px;"></div>
+            <div class="Order_submit">
+                <div class="tp_pages">{$page}</div>
+            </div>
+        </div>
+        <include file="Public:copyright"/>
+    </div>
+</black>

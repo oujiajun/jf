@@ -1,0 +1,28 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href='{:U('Index/index')}'>首页</a></li>
+    </ol>
+    <div class="content">
+        <div class="geren">
+            <div class="Title"><b>{:L('system_info')}</b><span>{:L('esystem_info')}</span></div>
+            <ul>
+                <li><span>{:L('yikecms_version')}：</span>{$system_info.version}</li>
+                <li><span>{:L('server_domain')}：</span>{$system_info.server_domain}</li>
+                <li><span>{:L('server_os')}：</span>{$system_info.server_os}</li>
+                <li><span>{:L('web_server')}：</span>{$system_info.web_server}</li>
+                <li><span>{:L('php_version')}：</span>{$system_info.php_version}</li>
+                <li><span>{:L('mysql_version')}：</span>{$system_info.mysql_version}</li>
+                <li><span>{:L('upload_max_filesize')}：</span>{$system_info.upload_max_filesize}</li>
+                <li><span>{:L('max_execution_time')}：</span>{$system_info.max_execution_time}</li>
+                <li><span>{:L('safe_mode')}：</span>{$system_info.safe_mode}</li>
+                <li><span>{:L('zlib')}：</span>{$system_info.zlib}</li>
+                <li><span>{:L('curl')}：</span>{$system_info.curl}</li>
+                <li><span>{:L('timezone')}：</span>{$system_info.timezone}</li>
+                 <li><span>{:L('Thinkphp')}：</span>{$system_info.Thinkphp}</li>
+                <li><span>{:L('yunxin')}：</span>{$system_info.yunxin}</li>
+            </ul>
+        </div>
+        <include file="Public:copyright"/>
+    </div>
+</block>

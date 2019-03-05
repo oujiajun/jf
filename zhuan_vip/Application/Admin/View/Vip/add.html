@@ -1,0 +1,62 @@
+<?php $sel = 15; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>用户信息</li>
+		</ol>
+        <div class="content">
+			<div class="Config_nav">
+                <ul>
+                    <li><a href="{:U('User/index')}">充值信息</a></li>
+                </ul>
+            </div>
+            <form action="{:U('Vip/doadd')}" method="post"  id="form" enctype="multipart/form-data" >
+           		<div class="SiteContent">
+                    <ul>
+                        <li class="Name">会员账户</li>
+                        <li class="input">
+                            <input class="common-text input-text" name="username" size="40" type="text">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="Name">存款金额</li>
+                        <li class="input">
+                            <input class="common-text input-text" name="money" size="40" type="text">
+                        </li>
+                    </ul>
+                    <ul>
+                            <li class="Name">有效投注</li>
+                            <li class="input"><input class="common-text input-text" name="betting" size="40" type="text"></li>
+                    </ul>
+
+                    <ul>
+                            <li class="Name">发布时间</li>
+                            <li class="input">
+                               <input type="text" name="system_date" class="common-text input-text time" value="{$dates}" readonly="readonly" size="40" style="cursor:pointer;" />
+                            </li>
+                   </ul>
+
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+                        <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                    </div>
+				</div>
+            </form>
+            <include file="Public:copyright"/>
+        </div>
+</block>
+
+<script type="text/javascript" src="__JS__/selectTag/selectTag.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii:ss',
+        language: "zh-CN",
+        minView: 2,
+        autoclose: true
+    });
+    showTab();
+});
+</script>

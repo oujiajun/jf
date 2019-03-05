@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>{$config.companyname}-后台管理系统</title>
+<!--[if lt IE 8]>
+<script>
+	alert('H+已不支持IE6-8，请使用谷歌、火狐等浏览器\n或360、QQ等国产浏览器的极速模式浏览本页面！');
+</script>
+<![endif]-->
+<link rel="shortcut icon" href="/favicon.ico">
+<css file="__CSS__/Css.css" />
+<link href="__CSS__/font-awesome.min.css" rel="stylesheet">
+<if condition="$sel == 1 || $sel == 3 || $sel == 4">
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/Ueditor/ueditor.parse.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/Ueditor/ueditor.config.min.js"></script>
+</if>
+<if condition="$sel == 2 || $sel == 3 || $sel == 4 || $sel==15">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/User/css/uploadify.css" />
+	<script src="__JS__/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/User/js/jquery.uploadify-3.1.js"></script>
+</if>
+<if condition="$sel == 4 || $sel==15">
+<link href="__PUBLIC__/assets/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/assets/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/assets/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+</if>

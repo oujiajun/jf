@@ -1,0 +1,65 @@
+<?php $sel = 15; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li>流水账信息</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on">用户信息</a></li>
+                <li><a href="{:U('Vip/account_exports')}">导出流水账数据</a></li>
+            </ul>
+        </div>
+        <div class="Search">
+            <form action="{:U('Vip/searchs')}" method="get">
+                <div class="keyword">
+                    <input class="common-text input-text" size="25" placeholder="用户名" name="q" value=""  type="text">
+                    <input type="text" name="start" class="common-text input-text time" value="{$dates}" size="40" style="cursor:pointer;" placeholder="开始时间" />
+                    <input type="text" name="end" class="common-text input-text time" value="{$dates}"  size="40" style="cursor:pointer;" placeholder="结束时间" />
+                </div>
+                <div class="btn1"><input class="btn btn-primary btn6 mr10" value="查询" type="submit" /></div>
+            </form>
+        </div>
+        <div class="List">
+            <div class="table-list">
+                <ul>
+                    <li class="ID">ID</li>
+                    <li class="Name">会员账号</li>
+                    <li class="Property">存款金额</li>
+                    <li class="S_Order">有效投注</li>
+                    <li class="Status">时间</li>
+                </ul>
+            </div>
+            <foreach name="account_list" item="vo" key="k" >
+                <div class="ProList">
+                    <ul>
+                        <li class="ID">{$vo.id}</li>
+                        <li class="Name" style="text-align:center">{$vo.username}</li>
+                        <li class="Property">{$vo.money}</li>
+                        <li class="S_Order">{$vo.betting}</li>
+                        <li class="Status">{$vo.update_date}</li>
+                    </ul>
+                </div>
+            </foreach>
+            <div class="cl" style="margin-top: 15px;"></div>
+            <div class="Order_submit">
+                <div class="tp_pages">{$page}</div>
+            </div>
+        </div>
+        <include file="Public:copyright"/>
+    </div>
+</block>
+<script type="text/javascript" src="__JS__/selectTag/selectTag.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii:ss',
+        language: "zh-CN",
+        minView: 2,
+        autoclose: true
+    });
+    showTab();
+});
+</script>

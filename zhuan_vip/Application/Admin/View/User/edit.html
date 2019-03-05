@@ -1,0 +1,71 @@
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>用户信息</li>
+		</ol>
+        <div class="content">
+			<div class="Config_nav">
+                <ul>
+                    <li><a class="on" href="{:U('User/index')}">用户信息</a></li>
+                    <li><a href="{:U('User/group_list')}">会员组管理</a></li>
+                    <li><a href="{:U('User/group_add')}">会员组添加</a></li>
+                </ul>
+            </div>
+			<form action="{:U('User/update')}" method="post" id="form" enctype="multipart/form-data">
+            	<input type="hidden" name="userid" value="{$detail.userid}" />
+                <div class="SiteContent">
+                    <ul>
+                        <li class="Name">用户名</li>
+                        <li class="input">{$detail.username}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">所属会员组</li>
+                        <li class="input">{:get_groupname($detail['groupid'])}</li>
+                    </ul>
+                     <ul>
+                        <li class="Name">昵称</li>
+                        <li class="input">{$detail.nickname}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">性别</li>
+                        <li class="input">{$detail[sex] == 1?'男':'女'}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">电话/手机</li>
+                        <li class="input">{$detail.telphone}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">邮箱</li>
+                        <li class="input">{$detail.email}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">地址</li>
+                        <li class="input">{$detail.address}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">余额</li>
+                        <li class="input"><font color=red>{$detail.money}</font> 元</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">上次登陆时间</li>
+                        <li class="input">{$detail.lasttime|date="Y-m-d H:i:s",###}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">上次登陆IP</li>
+                        <li class="input">{$detail.lastip}</li>
+                    </ul>
+                    <ul>
+                        <li class="Name">积分</li>
+                        <li class="input"><input class="common-text input-text" size="40" name="point" value="{$detail.point}" type="text"></li>
+                    </ul>
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" value="修改" style="margin-right: 10px;" type="submit">
+                        <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                    </div>
+				</div>
+            </form>
+            <include file="Public:copyright"/>
+        </div>
+</block>

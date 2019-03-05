@@ -1,0 +1,94 @@
+<include file="Public/commoner"/>
+<block name="body">
+    <ol class="breadcrumb">
+        <li><a href="{:U('Index/index')}">首页</a></li>
+        <li>用户信息</li>
+    </ol>
+    <div class="content">
+        <div class="Config_nav">
+            <ul>
+                <li><a class="on" href="{:U('Vip/index')}">用户信息</a></li>
+                <li><a href="{:U('Vip/add')}">用户充值</a></li>
+            </ul>
+        </div>
+        <div class="Search">
+            <form action="{:U('Vip/i_searchs')}" method="get">
+                <div class="keyword">
+                    <input class="common-text input-text" size="25" placeholder="用户名" name="q" value=""  type="text">
+                    
+                </div>
+                <div class="btn1">
+                    <input class="btn btn-primary btn6 mr10" value="查询" type="submit" />
+               </div>
+            </form>
+        </div>
+        <div class="List">
+            <div class="table-list">
+                <ul>
+                    <li class="ID">ID</li>
+                    <li class="Name">会员账号</li>
+                    <li class="S_Order">有效投注</li>
+                    <li class="Property">距离下一级所需流水</li>
+                    <li class="Status">当前会员等级</li>
+                    <!--<li class="Oper" style="width:250px; text-align:center;">编辑</li>-->
+                </ul>
+            </div>
+            <foreach name="user_list" item="vo" key="k" >
+                <div class="ProList">
+                    <ul>
+                        <li class="ID">{$vo.userid}</li>
+                        <li class="Name" style="text-align:center">{$vo.username}</li>
+                        <li class="S_Order">{$vo.betting}</li>
+                        <li class="Property">{$vo.n_betting}</li>
+                        <if condition="$vo.lev eq '1'">
+                          <li class="S_Order">
+                            <a>vip1</a>
+                          </li> 
+                        <elseif condition="$vo.lev eq '2'"/>
+                          <li class="S_Order">
+                             <a>vip2</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '3'"/>
+                          <li class="S_Order">
+                             <a>vip3</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '4'"/>
+                          <li class="S_Order">
+                             <a>vip4</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '5'"/>
+                          <li class="S_Order">
+                             <a>vip5</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '6'"/>
+                          <li class="S_Order">
+                             <a>vip6</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '7'"/>
+                          <li class="S_Order">
+                             <a>vip7</a>
+                         </li> 
+                         <elseif condition="$vo.lev eq '8'"/>
+                         <li class="S_Order">
+                            <a>vip8</a>
+                        </li>
+                        <elseif condition="$vo.lev eq '9'"/>
+                        <li class="S_Order">
+                           <a>vip9</a>
+                       </li>
+                       <else/>
+                       <li class="S_Order">
+                          <a>无</a>
+                      </li>
+                     </if >
+                    </ul>
+                </div>
+            </foreach>
+            <div class="cl" style="margin-top: 15px;"></div>
+            <div class="Order_submit">
+                <div class="tp_pages">{$page}</div>
+            </div>
+        </div>
+        <include file="Public:copyright"/>
+    </div>
+</block>

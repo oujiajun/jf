@@ -1,0 +1,135 @@
+<include file="Public/commoner"/>
+<block name="body">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li><a href="{:U('Jobs/index')}">招聘管理</a></li>
+		<li>添加招聘</li>
+	</ol>
+	<div class="content">
+		 <div class="Config_nav">
+			<ul>
+				<li><a href="{:U('Jobs/index')}">招聘管理</a></li>
+				<li><a class="on" href="{:U('Jobs/add')}">添加招聘</a></li>
+				<li><a href="{:U('Jobs/jobjoin_index')}">应聘简历</a></li>
+			</ul>
+		</div>
+		<form action="{:U('Jobs/insert')}" method="post" id="form"  enctype="multipart/form-data">     
+			<div class="Save">
+				<div id=cpxqcon>
+					<div id="cpxqcontags">
+						<ul id="cpxqtags">
+							<li class="selectTag"><A onClick="selectTag('cpxqtagContent0',this)" href="javascript:void(0)">常规选项</A></li>
+							<li><A onClick="selectTag('cpxqtagContent1',this)" href="javascript:void(0)">SEO设置</A></li>
+							<li><A onClick="selectTag('cpxqtagContent2',this)" href="javascript:void(0)">职位信息</A></li>
+						</ul>
+					</div>
+					<div id="cpxqtagContent"> 
+						<div class="cpxqtagContent selectTag" id=cpxqtagContent0 style="display:block;">
+							<ul>
+								<li class="Name">栏目</li>
+								<li class="input">
+									<select name="catid">
+										<option>选择栏目</option>
+										<foreach name="cate_list" item="vo" key="k" >
+											<option value="{$vo.catid}" <if condition="$vo['ispart'] eq 1 or $vo['ismodel'] != 5">disabled="disabled"</if>>{:str_repeat("└─",$vo['level'])}{$vo.catname}</option>
+										</foreach>
+									</select>
+								</li>
+							</ul>
+							<ul>
+								<li class="Name">文章标题</li>
+								<li class="input"><input class="common-text input-text" name="title" size="40" datatype="*1-100" value=""  type="text"></li>
+							</ul>
+							<ul>
+								<li class="Name">职业类型</li>
+								<li class="input">
+							  <select name="company">
+										<option value="0">全职</option>
+										<option value="1">兼职</option>
+									</select>
+								</li>
+							</ul>
+							<script type="text/javascript" src="__JS__/City.js"></script>
+							<ul>
+								<li class="Name">城市</li>
+								<li class="input">
+									<select name="province" id="province" onChange="chgProvinces('province','city','area')"></select>
+									<select name="city" id="city" onChange="chgCitys('city','area')"></select>
+									<select name="area" id="area"></select>
+								</li>
+							</ul>
+							<script>showCtiy(0,0,0,"province","city","area")</script>
+							<ul>
+								<li class="Name">工作经验</li>
+								<li class="input">
+								  <input name="years" class="common-text input-text" value="" size="30" type="text">
+								</li>
+							</ul>
+							<ul>
+								<li class="Name">招聘人数</li>
+								<li class="input">
+								  <input name="rens" class="common-text input-text" value="" size="15" type="text">
+								</li>
+							</ul>
+							<ul>
+								<li class="Name">薪酬</li>
+								<li class="input">
+								  <input name="daiy" class="common-text input-text" value="" size="15" type="text">
+								</li>
+							</ul>
+							<ul>
+								<li class="Name">学历要求</li>
+								<li class="input">
+									<select name="qualifi">
+										<option value="0">不限</option>
+										<option value="1">小学</option>
+										<option value="2">初中</option>
+										<option value="3">高中</option>
+										<option value="4">大专</option>
+										<option value="5">本科</option>
+										<option value="6">研究生</option>
+										<option value="7">硕士</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class="cpxqtagContent" id=cpxqtagContent1>
+                        	<ul>
+								<li class="Name">SEO标题</li>
+								<li class="input"><input class="common-text input-text" name="ptitle" value="" size="50" type="text"></li>
+							</ul>
+							<ul>
+								<li class="Name">SEO关键词</li>
+								<li class="input"><input class="common-text input-text" name="pkeywords" value="" size="50" type="text"></li>
+							</ul>
+							<ul>
+								<li class="Name">SEO描述</li>
+								<li class="input"><textarea name="pdescription" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5"></textarea></li>
+							</ul>
+						</div>
+						<div class="cpxqtagContent" id=cpxqtagContent2>
+							<ul>
+								<li class="Name">岗位职责</li>
+								<li class="input"><textarea name="content" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5"></textarea></li>
+							</ul>
+							<ul>
+								<li class="Name">任职资格</li>
+								<li class="input"><textarea name="profe" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5"></textarea></li>
+							</ul>
+							<ul>
+								<li class="Name">薪酬福利</li>
+								<li class="input"><textarea name="info" class="common-textarea textarea" cols="30" style="width: 50%;" rows="5"></textarea></li>
+							</ul>
+						</div>
+						<div class="cl" style="height: 10px;"></div>
+						<div class="btn">
+							<input class="btn btn-primary btn6 mr10" name="submit" value="保存后关闭" style="margin-right: 10px;" type="submit"><input class="btn btn-primary btn6 mr10" name="submit_continue" style="margin-right: 10px;" value="保存后继续" type="submit"><input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+						</div>
+					</div>
+				</div>
+			</div>    
+		</form>           
+		<include file="Public:copyright"/>
+	</div>
+</black>
+<script type="text/javascript" src="__JS__/selectTag/selectTag.js"></script>

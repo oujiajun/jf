@@ -1,0 +1,42 @@
+<?php $sel = 15; ?>
+<include file="Public/commoner"/>
+<block name="body">
+    	<ol class="breadcrumb">
+			<li><a href="{:U('Index/index')}">首页</a></li>
+            <li>用户信息</li>
+		</ol>
+        <div class="content">
+			<div class="Config_nav">
+                <ul>
+                    <li><a href="{:U('User/index')}">用户信息</a></li>
+                    <li><a href="{:U('User/group_list')}">会员组管理</a></li>
+                    <li><a class="on" href="{:U('User/group_add')}">会员组添加</a></li>
+                </ul>
+            </div>
+            <form action="{:U('User/group_add')}" method="post"  id="form" enctype="multipart/form-data" >
+           		<div class="SiteContent">
+                    <ul>
+                        <li class="Name">会员组名称</li>
+                        <li class="input"><input class="common-text input-text" name="name" size="40" type="text"></li>
+                    </ul>
+                    <ul>
+                        <li class="Name">积分</li>
+                        <li class="input"><input class="common-text input-text" name="point" size="40" type="text"></li>
+                    </ul>
+                    <ul>
+                        <li class="Name">状态</li>
+                        <li class="input">
+                            <div class="radio"><span><input type="radio" name="status" value="1" checked="checked"></span><label for="ishidden1">正常</label></div>
+                            <div class="radio"><span><input type="radio" name="status" value="0"></span><label for="ishidden2">锁定</label></div>
+                        </li>
+                    </ul>
+                    <div class="cl" style="height: 10px;"></div>
+                    <div class="btn">
+                        <input class="btn btn-primary btn6 mr10" value="提交" style="margin-right: 10px;" type="submit">
+                        <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                    </div>
+				</div>
+            </form>
+            <include file="Public:copyright"/>
+        </div>
+</block>
